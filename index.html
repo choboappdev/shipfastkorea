@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShipFast Korea - International Shipping Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <meta name="description" content="Professional Korean shipping service for international customers - K-Beauty, K-Pop merchandise, electronics shipping worldwide">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-orange-600">🚚 ShipFast Korea</h1>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-900 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#services" class="text-gray-600 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="#shipping" class="text-gray-600 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium">Shipping</a>
+                        <a href="#tracking" class="text-gray-600 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium">Tracking</a>
+                        <a href="#stores" class="text-gray-600 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium">Korean Stores</a>
+                        <a href="#deals" class="text-gray-600 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium">Hot Deals</a>
+                        <a href="#pricing" class="text-gray-600 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+                        <a href="#contact" class="text-gray-600 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Auth Buttons -->
+                <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <a href="#login" class="text-gray-600 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium">Customer Login</a>
+                        <a href="#register" class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md text-sm font-medium ml-3">Sign Up</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden" x-data="{ open: false }">
+                    <button @click="open = !open" class="text-gray-600 hover:text-gray-900 p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                    
+                    <!-- Mobile Menu -->
+                    <div x-show="open" x-cloak class="absolute top-16 left-0 w-full bg-white shadow-lg border-b md:hidden">
+                        <div class="px-2 pt-2 pb-3 space-y-1">
+                            <a href="#home" class="text-gray-900 block px-3 py-2 text-base font-medium">Home</a>
+                            <a href="#services" class="text-gray-600 hover:text-orange-600 block px-3 py-2 text-base font-medium">Services</a>
+                            <a href="#shipping" class="text-gray-600 hover:text-orange-600 block px-3 py-2 text-base font-medium">Shipping</a>
+                            <a href="#tracking" class="text-gray-600 hover:text-orange-600 block px-3 py-2 text-base font-medium">Tracking</a>
+                            <a href="#stores" class="text-gray-600 hover:text-orange-600 block px-3 py-2 text-base font-medium">Korean Stores</a>
+                            <a href="#deals" class="text-gray-600 hover:text-orange-600 block px-3 py-2 text-base font-medium">Hot Deals</a>
+                            <a href="#pricing" class="text-gray-600 hover:text-orange-600 block px-3 py-2 text-base font-medium">Pricing</a>
+                            <a href="#contact" class="text-gray-600 hover:text-orange-600 block px-3 py-2 text-base font-medium">Contact</a>
+                            <div class="border-t pt-4">
+                                <a href="#login" class="text-gray-600 block px-3 py-2 text-base font-medium">Customer Login</a>
+                                <a href="#register" class="bg-orange-600 text-white block px-3 py-2 rounded-md text-base font-medium mt-2">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="home" class="bg-gradient-to-r from-orange-500 to-red-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    🇰🇷 Professional Korean Shipping Service
+                </h1>
+                <p class="text-xl md:text-2xl text-orange-100 mb-8 max-w-3xl mx-auto">
+                    Connecting Korea to the world through reliable, fast, and affordable international shipping. Specializing in K-Beauty, K-Pop merchandise, electronics, and more.
+                </p>
+                <div class="space-x-4">
+                    <button class="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition">
+                        Get Shipping Quote
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-orange-600 transition">
+                        Track Your Package
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Overview -->
+    <div id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Shipping Services</h2>
+                <p class="text-xl text-gray-600">Comprehensive solutions for all your Korean shipping needs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 rounded-lg border hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">📦</div>
+                    <h3 class="text-xl font-bold mb-4">Package Forwarding</h3>
+                    <div class="bg-gray-100 rounded-lg p-6 text-center">
+                        <p class="text-gray-700 font-medium mb-2">🚧 Service Launching Soon</p>
+                        <p class="text-xs text-gray-500">Complete package forwarding service from Korean retailers to your doorstep worldwide</p>
+                    </div>
+                    <ul class="text-sm text-gray-600 mt-4 space-y-1">
+                        <li>• Korean warehouse address</li>
+                        <li>• Package consolidation</li>
+                        <li>• International shipping</li>
+                    </ul>
+                </div>
+                
+                <div class="text-center p-8 rounded-lg border hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">🛍️</div>
+                    <h3 class="text-xl font-bold mb-4">Proxy Shopping</h3>
+                    <div class="bg-gray-100 rounded-lg p-6 text-center">
+                        <p class="text-gray-700 font-medium mb-2">🚧 Service Launching Soon</p>
+                        <p class="text-xs text-gray-500">We shop for you at Korean stores that don't ship internationally</p>
+                    </div>
+                    <ul class="text-sm text-gray-600 mt-4 space-y-1">
+                        <li>• Personal shopping service</li>
+                        <li>• Korean-only stores access</li>
+                        <li>• Quality verification</li>
+                    </ul>
+                </div>
+                
+                <div class="text-center p-8 rounded-lg border hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">💄</div>
+                    <h3 class="text-xl font-bold mb-4">K-Beauty Specialist</h3>
+                    <div class="bg-gray-100 rounded-lg p-6 text-center">
+                        <p class="text-gray-700 font-medium mb-2">🚧 Service Launching Soon</p>
+                        <p class="text-xs text-gray-500">Specialized handling for cosmetics and beauty products with temperature control</p>
+                    </div>
+                    <ul class="text-sm text-gray-600 mt-4 space-y-1">
+                        <li>• Temperature-controlled shipping</li>
+                        <li>• Fragile item protection</li>
+                        <li>• Beauty product expertise</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div id="shipping" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose ShipFast Korea?</h2>
+                <p class="text-xl text-gray-600">Professional international shipping with Korean expertise</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="font-bold mb-2">Express Shipping</h3>
+                    <div class="bg-white rounded-lg p-4 text-center">
+                        <p class="text-gray-700 text-sm font-medium mb-2">🚧 Coming Soon</p>
+                        <p class="text-xs text-gray-500">Fast delivery worldwide with tracking</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🛡️</span>
+                    </div>
+                    <h3 class="font-bold mb-2">Secure Handling</h3>
+                    <div class="bg-white rounded-lg p-4 text-center">
+                        <p class="text-gray-700 text-sm font-medium mb-2">🚧 Coming Soon</p>
+                        <p class="text-xs text-gray-500">Professional packaging and insurance</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">💰</span>
+                    </div>
+                    <h3 class="font-bold mb-2">Competitive Rates</h3>
+                    <div class="bg-white rounded-lg p-4 text-center">
+                        <p class="text-gray-700 text-sm font-medium mb-2">🚧 Coming Soon</p>
+                        <p class="text-xs text-gray-500">Best shipping rates from Korea</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📱</span>
+                    </div>
+                    <h3 class="font-bold mb-2">Real-time Tracking</h3>
+                    <div class="bg-white rounded-lg p-4 text-center">
+                        <p class="text-gray-700 text-sm font-medium mb-2">🚧 Coming Soon</p>
+                        <p class="text-xs text-gray-500">Track your package every step</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popular Categories -->
+    <div id="stores" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Popular Korean Products</h2>
+                <p class="text-xl text-gray-600">What our customers love to ship</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-pink-50 p-6 rounded-lg border">
+                    <h3 class="text-xl font-bold mb-3 text-pink-700">💄 K-Beauty Products</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Skincare (Serums, Masks, Cleansers)</li>
+                        <li>• Makeup (K-Beauty brands)</li>
+                        <li>• Sheet masks and beauty tools</li>
+                    </ul>
+                    <div class="mt-4 bg-white rounded p-3 text-center">
+                        <p class="text-sm text-gray-700 font-medium">🚧 Service Coming Soon</p>
+                    </div>
+                </div>
+                
+                <div class="bg-purple-50 p-6 rounded-lg border">
+                    <h3 class="text-xl font-bold mb-3 text-purple-700">🎵 K-Pop Merchandise</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Albums and photocards</li>
+                        <li>• Official merchandise</li>
+                        <li>• Concert goods and lightsticks</li>
+                    </ul>
+                    <div class="mt-4 bg-white rounded p-3 text-center">
+                        <p class="text-sm text-gray-700 font-medium">🚧 Service Coming Soon</p>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border">
+                    <h3 class="text-xl font-bold mb-3 text-blue-700">📱 Korean Electronics</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Samsung products</li>
+                        <li>• Korean tech accessories</li>
+                        <li>• Gaming peripherals</li>
+                    </ul>
+                    <div class="mt-4 bg-white rounded p-3 text-center">
+                        <p class="text-sm text-gray-700 font-medium">🚧 Service Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Preview -->
+    <div id="pricing" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Shipping Solutions</h2>
+                <p class="text-xl text-gray-600">Flexible options for every need</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm border">
+                    <h3 class="text-2xl font-bold mb-4">Basic Forwarding</h3>
+                    <div class="bg-gray-100 rounded-lg p-6 text-center mb-6">
+                        <p class="text-gray-700 font-medium mb-2">🚧 Pricing Coming Soon</p>
+                        <p class="text-xs text-gray-500">Competitive rates for package forwarding</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>✓ Korean warehouse address</li>
+                        <li>✓ Basic packaging</li>
+                        <li>✓ Standard shipping</li>
+                        <li>✓ Package tracking</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-orange-500 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-medium">Most Popular</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Premium Service</h3>
+                    <div class="bg-gray-100 rounded-lg p-6 text-center mb-6">
+                        <p class="text-gray-700 font-medium mb-2">🚧 Pricing Coming Soon</p>
+                        <p class="text-xs text-gray-500">Premium handling with extras</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>✓ Everything in Basic</li>
+                        <li>✓ Package consolidation</li>
+                        <li>✓ Photo inspection</li>
+                        <li>✓ Express shipping options</li>
+                        <li>✓ Insurance included</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm border">
+                    <h3 class="text-2xl font-bold mb-4">Proxy Shopping</h3>
+                    <div class="bg-gray-100 rounded-lg p-6 text-center mb-6">
+                        <p class="text-gray-700 font-medium mb-2">🚧 Pricing Coming Soon</p>
+                        <p class="text-xs text-gray-500">Personal shopping service rates</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>✓ Personal shopper service</li>
+                        <li>✓ Korean-only store access</li>
+                        <li>✓ Quality verification</li>
+                        <li>✓ Premium packaging</li>
+                        <li>✓ Purchase assistance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-orange-600 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Ship from Korea?</h2>
+            <p class="text-xl text-orange-100 mb-8">Be among the first to experience professional Korean shipping</p>
+            <div class="bg-white rounded-lg p-8 text-center max-w-md mx-auto">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">🚀 Launching Soon</h3>
+                <p class="text-gray-600 mb-6">Join our waitlist to be notified when our shipping service launches and receive early access benefits.</p>
+                <div class="space-y-4">
+                    <input type="email" placeholder="Enter your email address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+                    <button class="w-full bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition">
+                        Join Waitlist - Get Early Access
+                    </button>
+                    <p class="text-xs text-gray-500">* Early access customers get special pricing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">🚚 ShipFast Korea</h3>
+                    <p class="text-gray-400 mb-4">Professional Korean shipping service connecting Korea to the world through reliable international shipping solutions.</p>
+                    <p class="text-gray-400 text-sm">Business Registration: [Pending]</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-white">Package Forwarding</a></li>
+                        <li><a href="#services" class="hover:text-white">Proxy Shopping</a></li>
+                        <li><a href="#services" class="hover:text-white">K-Beauty Shipping</a></li>
+                        <li><a href="#services" class="hover:text-white">Electronics Shipping</a></li>
+                        <li><a href="#services" class="hover:text-white">Express Delivery</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#tracking" class="hover:text-white">Package Tracking</a></li>
+                        <li><a href="#pricing" class="hover:text-white">Shipping Calculator</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ & Help</a></li>
+                        <li><a href="#contact" class="hover:text-white">Contact Support</a></li>
+                        <li><a href="#" class="hover:text-white">Shipping Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Business Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>📧 business@shipfast.co.kr</li>
+                        <li>📱 +82-2-XXXX-XXXX</li>
+                        <li>📍 Seoul, South Korea</li>
+                        <li>🏢 Business Hours: Mon-Fri 9AM-6PM KST</li>
+                        <li>🌍 International Service</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">
+                        © 2025 ShipFast Korea. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 text-gray-400">
+                        <a href="#" class="hover:text-white">Privacy Policy</a>
+                        <a href="#" class="hover:text-white">Terms of Service</a>
+                        <a href="#" class="hover:text-white">Shipping Terms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        [x-cloak] { display: none !important; }
+        html { scroll-behavior: smooth; }
+    </style>
+</body>
+</html>
