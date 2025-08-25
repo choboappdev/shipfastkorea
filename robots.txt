@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Government demo site - not for public indexing
+# This site is for permit application purposes only
