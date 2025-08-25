@@ -13,56 +13,56 @@
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm border-b sticky top-0 z-50">
+    <nav class="bg-black shadow-sm border-b border-gray-800 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <h1 class="text-2xl font-bold text-orange-600">🚚 ShipFast Korea</h1>
+                        <h1 class="text-2xl font-bold text-white">🚚 ShipFast Korea</h1>
                     </div>
                 </div>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-center space-x-6">
-                        <a href="#home" class="text-gray-900 hover:text-black px-4 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
-                        <a href="#services" class="text-gray-600 hover:text-black px-4 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
-                        <a href="#shipping" class="text-gray-600 hover:text-black px-4 py-2 rounded-md text-sm font-medium transition-colors">Shipping</a>
-                        <a href="#stores" class="text-gray-600 hover:text-black px-4 py-2 rounded-md text-sm font-medium transition-colors">Korean Stores</a>
-                        <a href="#deals" class="text-gray-600 hover:text-black px-4 py-2 rounded-md text-sm font-medium transition-colors">Hot Deals</a>
-                        <a href="#pricing" class="text-gray-600 hover:text-black px-4 py-2 rounded-md text-sm font-medium transition-colors">Pricing</a>
+                        <a href="#home" class="text-white hover:text-gray-300 px-4 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#services" class="text-gray-300 hover:text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="#shipping" class="text-gray-300 hover:text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Shipping</a>
+                        <a href="#stores" class="text-gray-300 hover:text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Korean Stores</a>
+                        <a href="#deals" class="text-gray-300 hover:text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Hot Deals</a>
+                        <a href="#pricing" class="text-gray-300 hover:text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Pricing</a>
                     </div>
                 </div>
 
                 <!-- Auth Buttons -->
                 <div class="hidden md:block">
                     <div class="ml-8 flex items-center space-x-4">
-                        <a href="#login" class="text-gray-600 hover:text-black px-4 py-2 rounded-md text-sm font-medium transition-colors">Login</a>
-                        <a href="#register" class="bg-black hover:bg-gray-800 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap">Sign Up</a>
+                        <a href="#login" class="text-gray-300 hover:text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Login</a>
+                        <a href="#register" class="bg-white hover:bg-gray-200 text-black px-4 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap">Sign Up</a>
                     </div>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden" x-data="{ open: false }">
-                    <button @click="open = !open" class="text-gray-600 hover:text-gray-900 p-2">
+                    <button @click="open = !open" class="text-gray-300 hover:text-white p-2">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
                     </button>
                     
                     <!-- Mobile Menu -->
-                    <div x-show="open" x-cloak class="absolute top-16 left-0 w-full bg-white shadow-lg border-b md:hidden">
+                    <div x-show="open" x-cloak class="absolute top-16 left-0 w-full bg-black shadow-lg border-b border-gray-800 md:hidden">
                         <div class="px-2 pt-2 pb-3 space-y-1">
-                            <a href="#home" class="text-gray-900 block px-3 py-2 text-base font-medium">Home</a>
-                            <a href="#services" class="text-gray-600 hover:text-orange-600 block px-3 py-2 text-base font-medium">Services</a>
-                            <a href="#shipping" class="text-gray-600 hover:text-orange-600 block px-3 py-2 text-base font-medium">Shipping</a>
-                            <a href="#stores" class="text-gray-600 hover:text-orange-600 block px-3 py-2 text-base font-medium">Korean Stores</a>
-                            <a href="#deals" class="text-gray-600 hover:text-orange-600 block px-3 py-2 text-base font-medium">Hot Deals</a>
-                            <a href="#pricing" class="text-gray-600 hover:text-orange-600 block px-3 py-2 text-base font-medium">Pricing</a>
-                            <div class="border-t pt-4">
-                                <a href="#login" class="text-gray-600 block px-3 py-2 text-base font-medium">Login</a>
-                                <a href="#register" class="bg-orange-600 text-white block px-3 py-2 rounded-md text-base font-medium mt-2">Sign Up</a>
+                            <a href="#home" class="text-white block px-3 py-2 text-base font-medium">Home</a>
+                            <a href="#services" class="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">Services</a>
+                            <a href="#shipping" class="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">Shipping</a>
+                            <a href="#stores" class="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">Korean Stores</a>
+                            <a href="#deals" class="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">Hot Deals</a>
+                            <a href="#pricing" class="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium">Pricing</a>
+                            <div class="border-t border-gray-700 pt-4">
+                                <a href="#login" class="text-gray-300 block px-3 py-2 text-base font-medium">Login</a>
+                                <a href="#register" class="bg-white text-black block px-3 py-2 rounded-md text-base font-medium mt-2">Sign Up</a>
                             </div>
                         </div>
                     </div>
