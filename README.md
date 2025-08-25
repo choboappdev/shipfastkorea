@@ -8,7 +8,7 @@ This demo website is created for government permit application and regulatory re
 
 ## 🌐 Live Demo
 
-**GitHub Pages URL:** [Will be available once deployed]
+**GitHub Pages URL:** https://choboappdev.github.io/shipfastkorea
 
 ## 📋 Services Overview
 
